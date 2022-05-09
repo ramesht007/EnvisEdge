@@ -6,7 +6,7 @@ services:
     environment:
       - discovery.type=single-node
     volumes:
-      - ./elasticsearch_data/:/usr/share/elasticsearch/data
+      - /var/lib/elasticsearch/:/usr/share/elasticsearch/data
     mem_limit: "1g"
 
   redis-cache:
